@@ -1,0 +1,17 @@
+#重載模型
+	- 模型本身的參數 state_dict
+	- 模型constructor的參數
+	
+	
+# raw data -> preprocess data <--> inverse
+# prerocess data -->  model datas  <--> inverse
+# model datas --> batch datas  
+
+
+embedding初始化很重要
+可以用onehot初始化
+
+驗證模型validation/test performance
+驗證模型 example performance
+
+視覺化(輸出原始資料型態)

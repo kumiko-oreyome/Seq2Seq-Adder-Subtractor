@@ -1,0 +1,12 @@
+1. seq2seq
+	- embedding
+	- 一個RNN -->digit的關係 111 -->要學到 100 10 1 在3個step上面
+	- condition vector = (+/-) embedding concat last hidden 然後投射到一個空間去
+	- 之後decode就用第二個數字的embedding就好了
+2.seq2seq with atten
+	- 一個RNN -->digit的關係 111 -->要學到 100 10 1 在3個step上面
+	- 第一個context由 +/-的embedding得來
+	- 第二個context之後由N+M個數字和當前output hidden做attention來
+3.簡單RNN
+	- 一個RNN -->digit的關係 111 -->要學到 100 10 1 在3個step上面
+	- 把+/- embedding 還有兩個digit的embedding concat起來之後做一個投射之後丟到某個NN裡面,輸出當前的digit
